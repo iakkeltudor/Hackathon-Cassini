@@ -1,0 +1,19 @@
+{
+    "metadata": {
+        "lake": "Tarnita",
+        "timestamp": "2026-04-25T111358",
+        "satellite": "Sentinel-2"
+    },
+    "indicators": {
+        "chlorophyll_a": 1.369665988500067,
+        "turbidity": 1.8366539950368177,
+        "total_suspended_matter": 2.7549809925552267,
+        "surface_temperature": 19.986007093556655
+    },
+    "scoring": {
+        "bloom_risk": 0,
+        "eutrophication_risk": 10.957327908000536,
+        "water_quality_score": 96.32669200992636,
+        "risk_level": "Low"
+    }
+}
