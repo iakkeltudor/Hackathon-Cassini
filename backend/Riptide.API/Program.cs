@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-builder.Services.AddScoped<IWaterQualityService, WaterQualityService>();
+builder.Services.AddSingleton<IWaterQualityService, WaterQualityService>();
 
 builder.Services.AddPipelines(builder.Configuration);
 

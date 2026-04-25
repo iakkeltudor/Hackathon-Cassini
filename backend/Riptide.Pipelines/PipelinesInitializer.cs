@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Riptide.Domain;
 using Riptide.Pipelines.Options;
 
 namespace Riptide.Pipelines;
@@ -16,7 +15,6 @@ public static class PipelinesInitializer
         configuration.GetSection("Storage").Bind(storageOptions);
 
         services.AddSingleton(storageOptions);
-        services.AddSingleton<WaterQualityRecord, WaterQualityRecord>();
 
         return services;
     }

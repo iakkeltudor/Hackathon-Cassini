@@ -12,3 +12,6 @@ EO_RAW_FILE = os.path.join(RAW_DIR, "tarnita_eo_data.csv")
 COMBINED_PROCESSED_FILE = os.path.join(PROCESSED_DIR, "tarnita_combined_dataset.csv")
 FEATURES_FILE = os.path.join(PROCESSED_DIR, "tarnita_features.csv")
 SCORES_FILE = os.path.join(PROCESSED_DIR, "tarnita_predictions_scores.csv")
+
+# Path the backend API reads from (appsettings.json → Storage:CsvPath)
+EXCEL_CSV_FILE = os.path.join(STORAGE_DIR, "Excel.csv")

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Riptide.Application.Dtos;
 using Riptide.Application.Interfaces;
 
 namespace Riptide.API.Controllers;
@@ -14,20 +15,7 @@ public sealed class LakeController : ControllerBase
     }
 
     [HttpGet("/lake")]
-    public IActionResult GetLake()
-    {
-        return Ok(new
-        {
-            id = "tarnita",
-            name = "Lacul Tarnița",
-            county = "Cluj",
-            country = "Romania",
-            waterBodyType = "Recreational reservoir",
-            latitude = 46.705,
-            longitude = 23.255,
-            description = "Pilot lake for CSV-based MVP water quality monitoring."
-        });
-    }
+    public IActionResult GetLake() => Ok(new LakeDto());
 
     [HttpGet("/indicators/latest")]
     public async Task<IActionResult> GetLatestIndicators(CancellationToken cancellationToken)

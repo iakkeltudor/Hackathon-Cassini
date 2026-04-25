@@ -12,7 +12,7 @@ public sealed class WaterQualityService : IWaterQualityService
 {
     private readonly StorageOptions _storageOptions;
     private readonly SemaphoreSlim _cacheLock = new(1,1);
-    private IReadOnlyList<PredictionScoresCsvRow?> _cachedRows;
+    private IReadOnlyList<PredictionScoresCsvRow>? _cachedRows;
     private DateTime? _cachedLastWriteUtc;
 
     public WaterQualityService(StorageOptions storageOptions)
