@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="../Riptide.Application/Riptide.Application.csproj" />
+  <Project Path="../Riptide.Domain/Riptide.Domain.csproj" />
+  <Project Path="../Riptide.Infrastructure/Riptide.Infrastructure.csproj" />
+  <Project Path="../Riptide.Pipelines/Riptide.Pipelines.csproj" />
+  <Project Path="Riptide.API.csproj" />
+</Solution>
