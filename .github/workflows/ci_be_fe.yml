@@ -13,7 +13,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: backend
+        working-directory: backend/Riptide.API
 
     steps:
       - name: Checkout repository
@@ -25,10 +25,10 @@ jobs:
           dotnet-version: '10.0.x'
 
       - name: Restore backend
-        run: dotnet restore Riptide.slnx
+        run: dotnet restore Riptide.API.slnx
 
       - name: Build backend
-        run: dotnet build Riptide.sln --configuration Release --no-restore
+        run: dotnet build Riptide.API.slnx --configuration Release --no-restore
 
   frontend:
     name: Build React frontend
